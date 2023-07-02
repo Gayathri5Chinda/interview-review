@@ -1,14 +1,14 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCdgzy5iFSl-zSpJRVEHBJQRU5jm0WXfEM",
-  authDomain: "formapp-c2fed.firebaseapp.com",
-  projectId: "formapp-c2fed",
-  storageBucket: "formapp-c2fed.appspot.com",
-  messagingSenderId: "610254472535",
-  appId: "1:610254472535:web:eaf19b2abbef638c2a6a12"
-};
+        apiKey: "AIzaSyCdgzy5iFSl-zSpJRVEHBJQRU5jm0WXfEM",
+        authDomain: "formapp-c2fed.firebaseapp.com",
+        projectId: "formapp-c2fed",
+        storageBucket: "formapp-c2fed.appspot.com",
+        messagingSenderId: "610254472535",
+        appId: "1:610254472535:web:eaf19b2abbef638c2a6a12"
+      };
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
