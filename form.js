@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
 
 const firebaseConfig = {
         apiKey: "AIzaSyCdgzy5iFSl-zSpJRVEHBJQRU5jm0WXfEM",
@@ -30,7 +30,7 @@ document.getElementById("login-btn").addEventListener("click",function(){
     const loginEmail = document.getElementById("login-email").value;
     const loginPassword = document.getElementById("login-password").value;
 
-    signInWithEmailAndPassword(auth, loginEmail, loginPassword)
+    signInAnonymously(auth, loginEmail, loginPassword)
     .then((userCredential) => { 
     const user = userCredential.user;
     document.getElementById("result-box").style.display="inline";
